@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Reponse</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section>
+		<?php 
+			echo "Bonjour ";
+			echo $_POST["prenom"];
+			echo " ";
+			echo $_POST["nom"];
+			echo ".<br>Tu as une ";
+			echo $_POST["marque"];
+			echo ", ta date de naissance est :";
+			echo $_POST["date"];
+			echo "<br>et ton meilleur ami est ";
+			echo $_POST["BFFname"];
+			echo ".";
+		?>
+	</section>
+</body>
+</html>
