@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulaire</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section>
+		<h1>Bienvenue</h1>
+		<p class="soustitre">Veuillez répondre a queslques questions</p>
+		<form method="POST" action="reponce.html">
+			<label for="nom">Nom :</label>
+			<input type="text" name="nom" id="nom" autofocus="true">
+			<label for="prenom">Prenom :</label>
+			<input type="text" name="prenom" id="prenom">
+			<label for="date">Date de naissance :</label>
+			<input type="date" name="date" id="date">
+			<label for="marque">Marque de votre voiture :</label>
+			<div>
+			<input type="checkbox" name="autreListe" id="autreListe">
+			<label for="autreListe" class="checkboxLabel">La marque n'est pas dans la liste</label><br/>
+			<select name="marque" id="selecteurMarque">
+				<option value="aucune">-- Aucune --</option>
+				<option value="peugeot">Peugeot</option>
+				<option value="citroen">Citroen</option>
+				<option value="volswagen">Volswagen</option>
+				<option value="porche">Porche</option>
+				<option value="renault">Renault</option>
+				<option value="ferari">Ferari</option>
+				<option value="suzuki">Suzuki</option>
+				<option value="yunday">Yunday</option>
+				<option value="autre">Autre</option>
+			</select>
+			<div class="autre">
+					<label for="marqueAutre">Présisez la marque:</label>
+					<input type="text" name="marqueAutre">
+			</div>
+			</div>
+			<label for="BFFname">Nom de votre meilleur ami :</label>
+			<input type="text" name="BFFname">
+			<p>Sexe :</p>
+			<div>
+				<input type="radio" name="sexe" value="F" id="Feminin">
+				<label for="Feminin">Feminin</label>
+				<input type="radio" name="sexe" value="M" id="Masculin">
+				<label for="Masculin">Masculin</label>
+				<input type="radio" name="sexe" value="A" id="Autre">
+				<label for="Autre" class="side">Autre</label><br/>
+				<div class="preciseA" >
+					<label for="marqueAutre">Présisez :</label>
+					<input type="text" name="marqueAutre">
+				</div>
+			</div>
+			<input type="submit" name="submit">
+		</form>
+	</section>
+</body>
+</html>

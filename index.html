@@ -1,59 +1,29 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Formulaire</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Mon portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<section>
-		<h1>Bienvenue</h1>
-		<p class="soustitre">Veuillez r√©pondre a queslques questions</p>
-		<form method="POST" action="reponce.html">
-			<label for="nom">Nom :</label>
-			<input type="text" name="nom" id="nom" autofocus="true">
-			<label for="prenom">Prenom :</label>
-			<input type="text" name="prenom" id="prenom">
-			<label for="date">Date de naissance :</label>
-			<input type="date" name="date" id="date">
-			<label for="marque">Marque de votre voiture :</label>
-			<div>
-			<input type="checkbox" name="autreListe" id="autreListe">
-			<label for="autreListe" class="checkboxLabel">La marque n'est pas dans la liste</label><br/>
-			<select name="marque" id="selecteurMarque">
-				<option value="aucune">-- Aucune --</option>
-				<option value="peugeot">Peugeot</option>
-				<option value="citroen">Citroen</option>
-				<option value="volswagen">Volswagen</option>
-				<option value="porche">Porche</option>
-				<option value="renault">Renault</option>
-				<option value="ferari">Ferari</option>
-				<option value="suzuki">Suzuki</option>
-				<option value="yunday">Yunday</option>
-				<option value="autre">Autre</option>
-			</select>
-			<div class="autre">
-					<label for="marqueAutre">Pr√©sisez la marque:</label>
-					<input type="text" name="marqueAutre">
-			</div>
-			</div>
-			<label for="BFFname">Nom de votre meilleur ami :</label>
-			<input type="text" name="BFFname">
-			<p>Sexe :</p>
-			<div>
-				<input type="radio" name="sexe" value="F" id="Feminin">
-				<label for="Feminin">Feminin</label>
-				<input type="radio" name="sexe" value="M" id="Masculin">
-				<label for="Masculin">Masculin</label>
-				<input type="radio" name="sexe" value="A" id="Autre">
-				<label for="Autre" class="side">Autre</label><br/>
-				<div class="preciseA" >
-					<label for="marqueAutre">Pr√©sisez :</label>
-					<input type="text" name="marqueAutre">
-				</div>
-			</div>
-			<input type="submit" name="submit">
-		</form>
-	</section>
+    <header>
+        <h1>Mon nom</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">¿ propos de moi</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Bienvenue sur mon portfolio</h2>
+        <p>Sur ce site, vous pouvez dÈcouvrir mes projets et mon travail en tant que dÈveloppeur web.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Mon nom</p>
+    </footer>
 </body>
 </html>

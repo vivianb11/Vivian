@@ -1,129 +1,32 @@
-body
-{
-	background: no-repeat url("background.jpg");
-	background-size: cover;
-	display: flex;
-	align-content: center;
-	justify-content: center;
-}
-section
-{
-	display: block;
-	background: #FFFFFFE7;
-	border: 1px solid black;
-	padding:10px;
-	min-width: 300px;
-	border-radius:5px;
-}
-form
-{
-	display: flex;
-	flex-direction: column;
-}
-form>p
-{
-	margin:0;
-}
-input, select
-{
-	margin-bottom: 15px;
-	padding: 5px;
-	border-radius: 10px;
-	border: 1px solid lightgrey;
-}
-select
-{
-	margin-top: 5px;
-	margin-bottom: 15px;
-}
-input[type="radio"]
-{
-	-webkit-appearance:none;
-  	-moz-appearance: none;
-
-  	border-radius: 50%;
-  	position: relative;
-
-  	width: 16px;
-  	height: 16px;
-  	margin-bottom:-2px;
-
-  	transition-duration: 0.5s;
-}
-input[type="radio"]:checked
-{
-	box-shadow: inset 0px 0px 2px 3px #3367D6FF;
-}
-#selecteurMarque>option:checked
-{
-	display: none;
-}
-.autre
-{
-	margin-top: 5px;
-	display: none;
-}
-#autreListe:checked ~ #selecteurMarque
-{
-	display: none;
-}
-#autreListe:checked ~ .autre
-{
-	display: block;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
 }
 
-
-.preciseA {
-  display: none;
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-#Autre:checked ~ .preciseA {
-  display: block;
-}
-input[type="submit"]
-{
-	margin-top:15px;
-	cursor: pointer;
-	border: 1px solid #3367D6FF;
-}
-input[type="submit"]:hover
-{
-	background: #3367D6FF;
-	color:lightgrey;
-}
-h1
-{
-	margin-bottom: -4px;
-}
-.soustitre
-{
-	margin:1px;
-	size:5px;
-	color:grey;
-	margin-bottom: 25px;
-}
-input[type="checkbox"]
-{
-	position:absolute;
-	left:-99999999999px;
-}
-.checkboxLabel::before
-{
-	content: " ";
- 	display:inline-block;
- 	width:16px;
- 	height: 16px;
- 	margin-right: 2px;
- 	cursor: pointer;
- 	margin-bottom:-3px;
- 	border:1px solid lightgrey;
- 	border-radius:5px;
- 	transition-duration:0.5s;
- 	text-align: center;
- 	justify-content: center;
+nav li {
+    margin-right: 20px;
 }
 
-input[type="checkbox"]:checked + .checkboxLabel::before
-{
-		box-shadow: inset 0px 0px 3px 4px #3367D6FF;
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
