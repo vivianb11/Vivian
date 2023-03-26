@@ -1,7 +1,53 @@
+body {
+    background-color: #202020;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000000;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+    color: #888;
+}
+
 header {
-    background-color: #333;
+    background-color: #303030;
     color: #fff;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
 }
 
 nav ul {
@@ -9,6 +55,8 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 nav li {
@@ -25,8 +73,122 @@ section {
 }
 
 footer {
-    background-color: #333;
+    background-color: #303030;
     color: #fff;
     text-align: center;
     padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.toggle {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.checkbox {
+    display: none;
+}
+
+.label {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Dark mode styles */
+input[type="checkbox"]#toggle:checked ~ body {
+    background-color: #121212;
+    color: #fff;
+}
+
+input[type="checkbox"]#toggle:checked ~ header {
+    background-color: #212121;
+    color: #fff;
+}
+
+input[type="checkbox"]#toggle:checked ~ nav a,
+input[type="checkbox"]#toggle:checked ~ footer {
+    color: #ccc;
+}
+
+input[type="checkbox"]#toggle:checked ~ .toggle .label:before {
+    content: "\f2b9";
+    color: #fff;
+}
+
+section {
+    background-color: #444;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .social-icons a {
+        display: inline-block;
+        margin: 0 10px;
+        color: #fff;
+    }
+
+        .social-icons a .icon {
+            font-size: 24px;
+        }
+
+        .social-icons a:hover .icon {
+            color: #00acee;
+        }
+
+/* width and height of the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* background color of the scrollbar */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* color of the scrollbar handle */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+/* on hover, change color of scrollbar handle */
+::-webkit-scrollbar-thumb:hover {
+   background-color: #555;
+}
+
+.hidden {
+    display: none;
 }

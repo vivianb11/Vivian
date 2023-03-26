@@ -1,29 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html class="light-theme">
 <head>
     <title>Mon portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Mon nom</h1>
+        <div class="logo">
+            <h1>Vivian Boudon</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#">Portfolio</a></li>
-                <li><a href="#">À propos de moi</a></li>
+                <li><a href="#">A propos de moi</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <div class="toggle">
+            <input type="checkbox" id="toggle" class="checkbox">
+            <label for="toggle" class="label">&#x1F319;</label>
+        </div>
     </header>
 
     <section>
         <h2>Bienvenue sur mon portfolio</h2>
-        <p>Sur ce site, vous pouvez découvrir mes projets et mon travail en tant que développeur web.</p>
+        <p>Sur ce site, vous pouvez découvrir mes projets et mon travail en tant que Game Designer.</p>
+        <section class="grid">
+            <div class="item">
+                <a href="https://play.unity.com/mg/other/squaredroots" class="no-underline">
+                    <img src="image1.png">
+                    <h2>Square Roots</h2>
+                    <p>A prototype made at Concordia Global game jam 2022 with a fantastic group composed of Joshua, Raphael, Conor, Theo and me.</p>
+                </a>
+            </div>
+            <div class="item">
+                <!--<img src="image2.png">-->
+                <h2>Upcoming Projects</h2>
+                <p>...</p>
+            </div>
+            <!-- more items here -->
+        </section>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Mon nom</p>
+    <footer class="hidden">
+        <div class="footer-container">
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/vivian-boudon-800b02255/"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2023 Vivian Boudon</p>
+            </div>
+        </div>
     </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
