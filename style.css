@@ -1,8 +1,39 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.navbar-menu li:first-child {
+    margin-left: 0;
+}
+
+.navbar-menu li a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-menu li a:hover {
+    color: #f33;
+}
+
 body {
     background-color: #202020;
     color: #fff;
     font-family: Arial, sans-serif;
     margin: 0;
+    padding-bottom: 75px;
 }
 
 a {
@@ -18,6 +49,8 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
     padding: 20px;
+    text-align: center;
+    align-items: center;
 }
 
 .item {
@@ -27,11 +60,14 @@ a {
     padding: 20px;
 }
 
-img {
-    max-width: 100%;
+.item img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
     height: auto;
-    margin-bottom: 10px;
-    border-radius: 10px 10px 10px 10px;
+    margin-bottom:10px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 p {
@@ -40,36 +76,30 @@ p {
     color: #888;
 }
 
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+h3 {
+    padding-left: 10px;
+    font-size: 30px;
+}
+
 header {
     background-color: #303030;
     color: #fff;
-    padding: 20px;
+    width: 95%;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 0 0 10px 10px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
-    padding: 50px;
+    border-radius: 0 0 15px 15px;
+    margin: 0 auto;
 }
 
 footer {
@@ -80,6 +110,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    display:none;
 }
 
 .toggle {
@@ -87,34 +118,9 @@ footer {
     margin-right: 20px;
 }
 
-.checkbox {
-    display: none;
-}
-
 .label {
     font-size: 26px;
     cursor: pointer;
-}
-
-/* Dark mode styles */
-input[type="checkbox"]#toggle:checked ~ body {
-    background-color: #121212;
-    color: #fff;
-}
-
-input[type="checkbox"]#toggle:checked ~ header {
-    background-color: #212121;
-    color: #fff;
-}
-
-input[type="checkbox"]#toggle:checked ~ nav a,
-input[type="checkbox"]#toggle:checked ~ footer {
-    color: #ccc;
-}
-
-input[type="checkbox"]#toggle:checked ~ .toggle .label:before {
-    content: "\f2b9";
-    color: #fff;
 }
 
 section {
@@ -122,11 +128,6 @@ section {
     border-radius: 10px;
     padding: 50px;
     margin: 50px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
 }
 
 nav ul {
@@ -147,26 +148,6 @@ nav a {
     text-decoration: none;
 }
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-    .social-icons a {
-        display: inline-block;
-        margin: 0 10px;
-        color: #fff;
-    }
-
-        .social-icons a .icon {
-            font-size: 24px;
-        }
-
-        .social-icons a:hover .icon {
-            color: #00acee;
-        }
-
 /* width and height of the scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -175,18 +156,18 @@ nav a {
 
 /* background color of the scrollbar */
 ::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
+    background-color: #303030;
 }
 
 /* color of the scrollbar handle */
 ::-webkit-scrollbar-thumb {
-    background-color: #888;
+    background-color: #555;
     border-radius: 5px;
 }
 
 /* on hover, change color of scrollbar handle */
 ::-webkit-scrollbar-thumb:hover {
-   background-color: #555;
+   background-color: #888;
 }
 
 .hidden {

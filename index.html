@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="light-theme">
+<html>
 <head>
     <title>My portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -7,26 +7,31 @@
 <body>
     <header>
         <div class="logo">
-            <h1>Vivian Boudon</h1>
+            <h3>Vivian Boudon</h3>
         </div>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="navbar-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="toggle">
-            <input type="checkbox" id="toggle" class="checkbox">
-            <label for="toggle" class="label">&#x1F319;</label>
+            <label class="label">&#x1F319;</label>
         </div>
     </header>
 
-    <section>
-        <h2>Welcome to my portfolio</h2>
-        <p>On this site, you can discover my projects and my work as a Game Designer.</p>
-        <section class="grid">
+    <section id="home">
+        <div class="grid">
+            <h2>Welcome to my portfolio</h2>
+            <p>On this site, you can discover my projects, my work and progress as a Game Designer.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="grid">
             <div class="item">
                 <a href="https://play.unity.com/mg/other/squaredroots" class="no-underline">
                     <img src="image1.png">
@@ -39,11 +44,30 @@
                 <h2>Upcoming Projects</h2>
                 <p>...</p>
             </div>
+            <div class="item">
+                <!--<img src="image2.png">-->
+                <h2>Upcoming Projects</h2>
+                <p>...</p>
+            </div>
             <!-- more items here -->
-        </section>
+        </div>
     </section>
 
-    <footer class="hidden">
+    <section id="about">
+        <div class="grid">
+            <h2>About Me</h2>
+            <p>Here you can learn more about me and my background as a Game Designer.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="grid">
+            <h2>Contact Me</h2>
+            <p>If you have any questions or want to get in touch, feel free to send me an email or reach out to me on social media!</p>
+        </div>
+    </section>
+
+    <footer>
         <div class="footer-container">
             <div class="social-media">
                 <a href="#"><i class="fab fa-facebook"></i></a>
@@ -57,8 +81,6 @@
         </div>
     </footer>
 
-
     <script src="script.js"></script>
-
 </body>
 </html>
