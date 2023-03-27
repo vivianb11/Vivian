@@ -33,7 +33,8 @@ body {
     color: #fff;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding-bottom: 75px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 #contact p{
@@ -89,7 +90,7 @@ h1 {
 }
 
 h3 {
-    padding-left: 10px;
+    padding-left: 20px;
     font-size: 30px;
 }
 
@@ -102,25 +103,46 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 0 0 15px 15px;
+    border-radius: 15px 15px 15px 15px;
     margin: 0 auto;
+    margin-top: 2%;
 }
 
 footer {
     background-color: #303030;
     color: #fff;
     text-align: center;
+    align-items: center;
     padding: 20px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
-    display:none;
+    margin-top: 10px;
+    box-sizing: border-box;
 }
 
+footer a {
+color: #f33;
+text-decoration: none;
+padding: 5px;
+}
+
+footer a:hover {
+    color: #7be456;
+    text-decoration: underline;
+}
+
+
 .toggle {
-    display: inline-block;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
     margin-right: 20px;
 }
+    .toggle a {
+        margin-right: 10px;
+    }
+
 
 .label {
     font-size: 26px;
