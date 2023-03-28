@@ -37,8 +37,10 @@ body {
     box-sizing: border-box;
 }
 
-#contact p{
- text-align:justify;
+#contact p,
+#about p,
+#home p{
+    text-align: justify;
 }
 
 a {
@@ -198,4 +200,36 @@ nav a {
 
 .hidden {
     display: none;
+}
+
+
+.popup {
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #303030;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: top 0.5s ease-out;
+    margin-top: 10px;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+.popup button {
+    background-color: #007aff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
 }
