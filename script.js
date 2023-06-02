@@ -42,7 +42,7 @@ copyLink.addEventListener('click', () => {
     });
 
     setTimeout(() => {
-        // Fait disparaitre le popup après 3 secondes
+        // Fait disparaitre le popup aprï¿½s 3 secondes
         popup.style.top = "-100%";
         popup.style.opacity = "0";
         setTimeout(() => {
@@ -50,3 +50,24 @@ copyLink.addEventListener('click', () => {
         }, 300);
     }, 3000);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".card");
+    const triangles = document.querySelectorAll(".triangle");
+  
+    let currentIndex = 0;
+    cards[currentIndex].classList.add("active");
+  
+    triangles.forEach(function (triangle, index) {
+      triangle.addEventListener("click", function () {
+        cards[currentIndex].classList.remove("active");
+        if (triangle.classList.contains("prev")) {
+          currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+        } else if (triangle.classList.contains("next")) {
+          currentIndex = (currentIndex + 1) % cards.length;
+        }
+        cards[currentIndex].classList.add("active");
+      });
+    });
+  });
+  
