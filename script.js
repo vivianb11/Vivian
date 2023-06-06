@@ -52,8 +52,11 @@ copyLink.addEventListener('click', () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const cards = document.querySelectorAll(".card");
-    const triangles = document.querySelectorAll(".triangle");
+  const decks = document.querySelectorAll(".card-deck");
+
+  decks.forEach(function (deck) {
+    const cards = deck.querySelectorAll(".card");
+    const triangles = deck.querySelectorAll(".triangle");
   
     let currentIndex = 0;
     cards[currentIndex].classList.add("active");
@@ -70,4 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+});
+
   

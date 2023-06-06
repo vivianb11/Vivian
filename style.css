@@ -83,7 +83,7 @@ body {
     text-align: justify;
     margin-top: 20px;
     text-align: left; 
-    max-width: 700px;
+    max-width: 500px;
     margin: 0 auto;
   }
   
@@ -100,12 +100,14 @@ body {
 
   .Welcome_grid{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-direction: row;
+    -ms-flex-align: center;
     align-items: center;
     padding: 8px;
-    gap: 10%;
+    gap: 5%;
     margin: 0%;
-
   }
 
 a {
@@ -141,15 +143,18 @@ a {
 }
 
 .card-deck {
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    
   }
   
   .card {
-    width: 300px;
-    height: 200px;
+    width: 0%;
+    height: 0%;
+    min-width: 200px;
+    min-height: 200px;
     background-color: #1e1e1e;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -162,9 +167,32 @@ a {
   }
   
   .card.active {
+    width: 100%;
+    height: 100%;
     opacity: 1;
+    position: relative;
   }
   
+  .card.active h2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .card.active ul{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+  }
+
   .triangle {
     position: absolute;
     top: 50%;
