@@ -1,3 +1,4 @@
+//#region Popup Interaction
 const copyLink = document.querySelector('#copy-link');
 const textToCopy = 'vivianb.pro@gmail.com';
 
@@ -50,7 +51,9 @@ copyLink.addEventListener('click', () => {
         }, 300);
     }, 3000);
 });
+//#endregion
 
+//#region Deck Handler
 document.addEventListener("DOMContentLoaded", function () {
   const decks = document.querySelectorAll(".card-deck");
 
@@ -74,5 +77,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+//#endregion
 
+//#region Video Manager
+const video = document.querySelector('video');
+
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.5, // Play video when 50% of it is visible
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+}, options);
+
+observer.observe(video);
+//#endregion
   
