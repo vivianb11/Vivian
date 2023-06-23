@@ -46,9 +46,6 @@ copyLink.addEventListener('click', () => {
         // Fait disparaitre le popup apr�s 3 secondes
         popup.style.top = "-100%";
         popup.style.opacity = "0";
-        setTimeout(() => {
-            document.body.removeChild(popup);
-        }, 300);
     }, 3000);
 });
 //#endregion
@@ -80,24 +77,28 @@ document.addEventListener("DOMContentLoaded", function () {
 //#endregion
 
 //#region Video Manager
-const video = document.querySelector('video');
+const videos = document.querySelectorAll('video');
 
-const options = {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0.5, // Play video when 50% of it is visible
-};
+if (videos.length > 0) {
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5, // Play video when 50% of it is visible
+  };
 
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      video.play();
-    } else {
-      video.pause();
-    }
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.play();
+      } else {
+        entry.target.pause();
+      }
+    });
+  }, options);
+
+  videos.forEach(video => {
+    observer.observe(video);
   });
-}, options);
-
-observer.observe(video);
+}
 //#endregion
   
