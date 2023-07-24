@@ -120,9 +120,10 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
-  padding: 20px;
   text-align: center;
   align-items: center;
+  align-content: center;
+  margin: 0 auto;
 }
 
 .item {
@@ -132,6 +133,10 @@ a {
   padding: 20px;
   max-height: 540px;
   aspect-ratio: 3/4;
+}
+
+.item:last-child{
+  aspect-ratio: 0;
 }
 
 .item img,
@@ -208,6 +213,7 @@ video {
 
 .card.active h2,
 .card h2 {
+  height: 10%;
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 15px;
@@ -220,6 +226,7 @@ video {
 }
 
 .cardContent ul li {
+  list-style: none;
   text-decoration: none;
   padding-bottom: 1rem;
   padding-inline-end: none;
@@ -236,7 +243,7 @@ video {
   justify-content: center;
   align-items: center;
   position: absolute;
-  text-align: left;
+  text-align: middle;
   align-self: stretch;
   top: 45%;
   left: 40%;
@@ -365,6 +372,32 @@ section {
   border-radius: 10px;
   padding: 50px;
   margin: 50px;
+}
+
+.title1{
+  /* background: linear-gradient(270deg, #1E1E1E 0%, rgba(23, 23, 23, 0.76) 36.18%, rgba(0, 0, 0, 0.00) 100%), url('Assets/Img/image2.png'), #1E1E1E 50% / cover no-repeat; */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background: url('Assets/Img/Title frame.png') no-repeat;
+
+
+  /* background: url('Assets/Img/feulles.jpg');
+  background-size: contain; */
+  
+}
+
+.Section_title{
+  text-align: center;
+text-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.53);
+font-family: French Script MT;
+font-size: 96px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background: linear-gradient(90deg, #000 0%, #B00000 27.50%, #EB0000 42.60%, #210000 69.60%, #000 99.16%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 p {
