@@ -118,7 +118,7 @@ a {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 20px;
   text-align: center;
   align-items: center;
@@ -133,6 +133,11 @@ a {
   padding: 20px;
   max-height: 540px;
   aspect-ratio: 3/4;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .item:last-child{
@@ -149,8 +154,12 @@ video {
   margin-bottom: 10px;
   border-radius: 10px;
   text-align: center;
-  aspect-ratio: 1/1;
-  
+  /* aspect-ratio: 1/1; */
+}
+
+.item .void{
+  display: flex;
+  flex: 1 1 0;
 }
 
 /* .item img:hover{
