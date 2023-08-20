@@ -102,3 +102,15 @@ if (videos.length > 0) {
 }
 //#endregion
   
+//#region Avoid Opera img problem
+// Check if the current browser is Opera
+if (window.opr) {
+  // Find the <style> element with the id "operaUserStyle"
+  var operaUserStyle = document.getElementById('operaUserStyle');
+  
+  // If the <style> element exists, remove it
+  if (operaUserStyle) {
+    operaUserStyle.parentNode.removeChild(operaUserStyle);
+  }
+}
+//#endregion
