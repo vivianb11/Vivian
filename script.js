@@ -103,14 +103,36 @@ if (videos.length > 0) {
 //#endregion
   
 //#region Avoid Opera img problem
+
 // Check if the current browser is Opera
-if (window.opr) {
-  // Find the <style> element with the id "operaUserStyle"
+// Fonction pour supprimer le style OperaUserStyle
+function removeOperaUserStyle() {
   var operaUserStyle = document.getElementById('operaUserStyle');
-  
-  // If the <style> element exists, remove it
   if (operaUserStyle) {
     operaUserStyle.parentNode.removeChild(operaUserStyle);
   }
 }
+
+// Supprimer le style lors du chargement initial de la page
+removeOperaUserStyle();
+
+// Surveiller les changements dans le DOM
+var observer = new MutationObserver(function(mutations) {
+  mutations.forEach(function(mutation) {
+    // Vérifier si un nouvel élément <style> avec l'ID operaUserStyle est ajouté
+    if (mutation.addedNodes) {
+      for (var i = 0; i < mutation.addedNodes.length; i++) {
+        var addedNode = mutation.addedNodes[i];
+        if (addedNode.id === 'operaUserStyle') {
+          removeOperaUserStyle(); // Supprimer le style
+          break;
+        }
+      }
+    }
+  });
+});
+
+// Configurer l'observation pour les ajouts d'éléments au nœud body
+observer.observe(document.body, { childList: true });
+
 //#endregion
