@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  filter: none;
+}
+
 header {
   background-color: #303030;
   color: #fff;
@@ -23,7 +27,7 @@ header {
 }
 
 .logo a h3 {
-  padding-left: 10%;
+  padding-left: 5%;
   padding-right: 10%;
   margin: 0px;
 }
@@ -75,15 +79,11 @@ body {
   text-align: center;
 }
 
-.presentation_Title {
-  max-width: 40%;
-}
-
 .welcome-text {
   text-align: justify;
   margin-top: 20px;
   text-align: left;
-  max-width: 500px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -147,14 +147,13 @@ a {
 .item img,
 video {
   display: block;
-  margin: 0 auto;
-  max-width: 90%;
-  max-height: 60%;
+  margin: auto;
+  max-width: 85%;
+  max-height: 50%;
   object-fit: contain;
-  margin-bottom: 10px;
+  /* margin-top: 0; */
   border-radius: 10px;
   text-align: center;
-  /* aspect-ratio: 1/1; */
 }
 
 .item .void{
@@ -176,12 +175,21 @@ video {
   animation-play-state: running;
 } */
 
+.item h2{
+  margin: 2%;
+}
+
+.item p{
+  margin: auto ;
+}
+
 .card-deck {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-
+  margin: auto;
+  max-width: 260px;
 }
 
 .card {
@@ -358,7 +366,6 @@ footer a:hover {
   display: none;
 }
 
-
 .toggle {
   display: flex;
   align-items: center;
@@ -368,6 +375,10 @@ footer a:hover {
 
 .toggle a {
   margin-right: 10px;
+}
+
+.toggle img {
+  aspect-ratio: 1/1;
 }
 
 .label {
@@ -391,7 +402,7 @@ section {
 
   /* background: url('Assets/Img/feulles.jpg');
   background-size: contain; */
-  
+
 }
 
 .Section_title{
