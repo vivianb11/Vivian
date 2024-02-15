@@ -14,7 +14,3 @@ function ReplaySound() {
     }
 
 }
-
-function Hint(){
-    document.getElementById('message').textContent = '---..';
-}
