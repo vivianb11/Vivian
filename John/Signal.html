@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outer Wilds Code</title>
+<link rel="stylesheet" href="John.css">
+</head>
+<body>
+    <video autoplay muted loop class="bgVid">
+        <source src="Outer Wilds Desktop Wallpaper for Wallpaper Engine.mp4" type="video/mp4">
+    </video>
+
+    <img src="outer-wilds-signalscope.gif" class="SignalScope">
+    
+    <div class="container">
+        <audio autoplay src="morse.wav"></audio>
+        <button onclick="ReplaySound()" class="btn-53"><div class="original">Replay</div>
+            <div class="letters">
+    
+                <span>R</span>
+                <span>E</span>
+                <span>P</span>
+                <span>L</span>
+                <span>A</span>
+                <span>Y</span>
+              </div></button>
+        <br><br>
+        <button onclick="Hint()" id="HintBtn" class="btn-53"><div class="original">Hint</div><span> Hint </span></button>
+        <br><br>
+        <p id="message" class="Hint"></p>
+    </div>
+
+    
+    <script src="Signal.js"></script>
+</body>
+</html>
