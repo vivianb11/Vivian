@@ -39,4 +39,7 @@ function validateCode() {
     }
 }
 
-
+var audio = new Audio('John/Outer Wilds.mp3');
+audio.loop = true;
+audio.volume = 0.05;
+audio.play();
