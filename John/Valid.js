@@ -1,9 +1,8 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Feb 30, 2024 00:00:00").getTime();
+var countDownDate = new Date("Mars 15, 2024 00:00:00").getTime();
 
 // Update the countdown every second
-var x = setInterval(function() {
-
+var x = setInterval(function () {
     // Get the current date and time
     var now = new Date().getTime();
 
@@ -12,13 +11,15 @@ var x = setInterval(function() {
 
     // Calculate days, hours, minutes, and seconds
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the countdown
-    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
+    document.getElementById("countdown").innerHTML =
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
     // If the countdown is over, display a message
     if (distance < 0) {
@@ -27,9 +28,9 @@ var x = setInterval(function() {
     }
 }, 1000);
 
-
 // Play sound on startup and loop
-var audio = new Audio('EchoOfTheEye.mp3');
+var audio = new Audio("EchoOfTheEye.mp3");
+audio.autoplay = true;
 audio.loop = true;
 audio.volume = 0.05;
 audio.play();

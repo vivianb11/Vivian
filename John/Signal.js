@@ -1,4 +1,3 @@
-
 var replayCount = 0;
 var buttonCreated = false;
 
@@ -10,7 +9,6 @@ function ReplaySound() {
     replayCount++;
 
     if (replayCount > 5 && !buttonCreated) {
-        document.getElementById('HintBtn').style.display = 'block';
+        document.getElementById("HintBtn").style.display = "block";
     }
-
 }
