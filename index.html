@@ -1,122 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My portfolio</title>
+        <link
+            rel="shortcut icon"
+            href="Assets/Icons/Logo-Site.png"
+            type="image/x-icon"
+        />
 
-    <title>My portfolio</title>
-    <link rel="shortcut icon" href="Assets/Icons/Logo-Site.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="buttons_style.css" />
+    </head>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="buttons_style.css">
-</head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="" class="no-underline">
+                    <h3>Vivian Boudon</h3>
+                </a>
+            </div>
+            <nav>
+                <ul class="navbar-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <!-- <li><a href="#about">About Me</a></li> -->
+                    <!-- <li><a href="#contact">Contact</a></li> -->
+                </ul>
+            </nav>
+            <div class="toggle">
+                <!--<label class="label">&#x1F319;</label>-->
+                <a href="#" class="no-underline" id="copy-link">
+                    <img
+                        src="Assets/Icons/Gmail-logo.png"
+                        width="32px"
+                        aspect-ratio="1/1"
+                    />
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/vivian-boudon/"
+                    class="no-underline"
+                    target="_blank"
+                >
+                    <img src="Assets/Icons/Linkedin-logo.png" width="32px" />
+                </a>
+                <a
+                    href="https://github.com/vivianb11"
+                    class="no-underline"
+                    target="_blank"
+                >
+                    <img src="Assets/Icons/github-icon.png" width="30px" />
+                </a>
+                <a
+                    href="https://vivianb11.artstation.com/"
+                    class="no-underline"
+                    target="_blank"
+                >
+                    <img src="Assets/Icons/Artstation-logo.png" width="32px" />
+                </a>
+            </div>
+        </header>
 
-<body>
-    <header>
-        <div class="logo">
-            <a href="" class="no-underline">
-                <h3>Vivian Boudon</h3>
-            </a>
-        </div>
-        <nav>
-            <ul class="navbar-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <!-- <li><a href="#about">About Me</a></li> -->
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="toggle">
-            <!--<label class="label">&#x1F319;</label>-->
-            <a href="#" class="no-underline" id="copy-link">
-                <img src="Assets/Icons/Gmail-logo.png" width="32px" aspect-ratio="1/1" />
-            </a>
-            <a href="https://www.linkedin.com/in/vivian-boudon/" class="no-underline" target="_blank">
-                <img src="Assets/Icons/Linkedin-logo.png" width="32px"/>
-            </a>
-            <a href="https://github.com/vivianb11" class="no-underline" target="_blank">
-                <img src="Assets/Icons/github-icon.png" width="30px"/>
-            </a>
-            <a href="https://vivianb11.artstation.com/" class="no-underline" target="_blank">
-                <img src="Assets/Icons/Artstation-logo.png" width="32px"/>
-            </a>
-        </div>
-    </header>
+        <section id="home">
+            <div class="presentation_Title">
+                <h1>Welcome to my portfolio</h1>
+            </div>
+            <div class="grid">
+                <div class="card-deck">
+                    <div class="card active">
+                        <h2 class="cardTitle">Knowledge</h2>
+                        <div class="cardContent">
+                            <div class="triangle prev"></div>
+                            <ul>
+                                <li>Programmation</li>
+                                <li>3D Modeling</li>
+                                <li>Version Control</li>
+                                <li>Ux Design</li>
+                            </ul>
+                            <div class="triangle next"></div>
+                        </div>
+                    </div>
 
-    <section id="home">
-        <div class="presentation_Title">
-            <h1>Welcome to my portfolio</h1>
-        </div>
-        <div class="grid">
-            <div class="card-deck">
-                <div class="card active">
-                    <h2 class="cardTitle">Knowledge</h2>
-                    <div class="cardContent">
-                        <div class="triangle prev"></div>
-                        <ul>
-                            <li>Programmation</li>
-                            <li>3D Modeling</li>
-                            <li>Version Control</li>
-                            <li>Ux Design</li>
-                        </ul>
-                        <div class="triangle next"></div>
+                    <div class="card">
+                        <h2>Soft Skills</h2>
+                        <div class="cardContent">
+                            <div class="triangle prev"></div>
+                            <ul>
+                                <li>Open Minded</li>
+                                <li>Organized</li>
+                                <li>Team Work</li>
+                                <li>Curious</li>
+                            </ul>
+                            <div class="triangle next"></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h2>Software I use</h2>
+                        <div class="cardContent">
+                            <div class="triangle prev"></div>
+                            <ul>
+                                <li>Unity</li>
+                                <li>Blender</li>
+                                <li>Figma</li>
+                                <li>Photoshop</li>
+                            </ul>
+                            <div class="triangle next"></div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card">
-                    <h2>Soft Skills</h2>
-                    <div class="cardContent">
-                        <div class="triangle prev"></div>
-                        <ul>
-                            <li>Open Minded</li>
-                            <li>Organized</li>
-                            <li>Team Work</li>
-                            <li>Curious</li>
-                        </ul>
-                        <div class="triangle next"></div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h2>Software I use</h2>
-                    <div class="cardContent">
-                        <div class="triangle prev"></div>
-                        <ul>
-                            <li>Unity</li>
-                            <li>Blender</li>
-                            <li>Figma</li>
-                            <li>Photoshop</li>
-                        </ul>
-                        <div class="triangle next"></div>
-                    </div>
+                <div>
+                    <p class="welcome-text">
+                        <strong>Hi, I'm Vivian!</strong><br /><br />
+                        I'm someone who is passionate about learning new things
+                        and recently got interested in Video Games. I truly
+                        believe games can be incredible creations, and I'm
+                        excited to bring my creativity to the gaming industry.
+                        To pursue my goals, I decided to study at Isart Digital
+                        Montreal to acquire new skills!
+                    </p>
                 </div>
             </div>
+        </section>
 
-            <div>
-                <p class="welcome-text">
-                    <strong>Hi, I'm Vivian!</strong><br><br>
-                    I'm someone who is passionate about learning new things and recently got interested in Video Games.
-                    I truly believe games can be incredible creations, and I'm excited to bring my creativity to the
-                    gaming industry.
-                    To pursue my goals, I decided to study at Isart Digital Montreal to acquire new skills!
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h1>Projects</h1>
-        <div class="grid">
-
-            <div class="item">
-                <!-- <div class="void"></div> -->
-                <img src="Assets/Img/Poster_-_Fiche.jpg">
-                <!-- <div class="void"></div> -->
+        <section id="projects">
+            <h1>Projects</h1>
+            <div class="grid">
+                <div class="item">
+                    <!-- <div class="void"></div> -->
+                    <img src="Assets/Img/Poster_-_Fiche.jpg" />
+                    <!-- <div class="void"></div> -->
                     <h2>POSSESSED</h2>
-                    <p>A innovent concept of a game where you can possess any enemy you encounter ! This Game was made in a 1 week game Jam</p>
-                <div class="Button Grid">
-                    <!-- <a href="#" class="btn" type="button">
+                    <p>
+                        A innovent concept of a game where you can possess any
+                        enemy you encounter ! This Game was made in a 1 week
+                        game Jam
+                    </p>
+                    <div class="Button Grid">
+                        <!-- <a href="#" class="btn" type="button">
                         <strong>Learn More <br> (WIP)</strong>
 
                         <div id="glow">
@@ -124,19 +148,27 @@
                             <div class="circle"></div>
                         </div>
                     </a> -->
-                    <a href="https://vivianb11.itch.io/possessed" class="button" target="_blank"><span> Try It Out</span></a>
+                        <a
+                            href="https://vivianb11.itch.io/possessed"
+                            class="button"
+                            target="_blank"
+                            ><span> Try It Out</span></a
+                        >
+                    </div>
                 </div>
-            </div>
 
-            <div class="item">
-                <!-- <div class="void"></div> -->
-                <img src="Assets/Img/SquareRoots_Ill.png">
-                <!-- <div class="void"></div> -->
+                <div class="item">
+                    <!-- <div class="void"></div> -->
+                    <img src="Assets/Img/SquareRoots_Ill.png" />
+                    <!-- <div class="void"></div> -->
                     <h2>Square Roots</h2>
-                    <p>A prototype made at Concordia Global game jam 2022 with a fantastic group composed of Joshua,
-                        Raphael, Conor, Theo and me.</p>
-                <div class="Button Grid">
-                    <!-- <a href="#" class="btn" type="button">
+                    <p>
+                        A prototype made at Concordia Global game jam 2022 with
+                        a fantastic group composed of Joshua, Raphael, Conor,
+                        Theo and me.
+                    </p>
+                    <div class="Button Grid">
+                        <!-- <a href="#" class="btn" type="button">
                         <strong>Learn More <br> (WIP)</strong>
 
                         <div id="glow">
@@ -144,16 +176,25 @@
                             <div class="circle"></div>
                         </div>
                     </a> -->
-                    <a href="https://play.unity.com/mg/other/squaredroots" class="button" target="_blank"><span> Try It Out</span></a>
+                        <a
+                            href="https://play.unity.com/mg/other/squaredroots"
+                            class="button"
+                            target="_blank"
+                            ><span> Try It Out</span></a
+                        >
+                    </div>
                 </div>
-            </div>
 
-            <div class="item">
-                    <img src="Assets/Img/DreamDropStarfight.png">
+                <div class="item">
+                    <img src="Assets/Img/DreamDropStarfight.png" />
                     <h2>Dream Drop Starfight</h2>
-                    <p>A 2 day game jam game with a fun verus mechanic ment to be played with friends and family ! <br> Give it a try and try not to fall off !!!</p>
-                <div class="Button Grid">
-                    <!-- <a href="#" class="btn" type="button">
+                    <p>
+                        A 2 day game jam game with a fun verus mechanic ment to
+                        be played with friends and family ! <br />
+                        Give it a try and try not to fall off !!!
+                    </p>
+                    <div class="Button Grid">
+                        <!-- <a href="#" class="btn" type="button">
                         <strong>Learn More <br> (WIP)</strong>
 
                         <div id="glow">
@@ -161,18 +202,28 @@
                             <div class="circle"></div>
                         </div>
                     </a> -->
-                    <a href="https://miss-mystie.itch.io/dream-drop-starfight" class="button" target="_blank"><span> Try It Out</span></a>
+                        <a
+                            href="https://miss-mystie.itch.io/dream-drop-starfight"
+                            class="button"
+                            target="_blank"
+                            ><span> Try It Out</span></a
+                        >
+                    </div>
                 </div>
-            </div>
 
-            <div class="item">
-                <!-- <div class="void"></div> -->
-                <img src="Assets/Img/CrazyPoolIlustration.png">
-                <!-- <div class="void"></div> -->
-                <h2>Crazy Billard</h2>
-                <p>The result of a amazing experiment of testing out and discovering unity ! Out of this came a original pool game where each ball has a unique behaviour ! Hope you enjoy ^^</p>
-                <div class="Button Grid">
-                    <!-- <a href="#" class="btn" type="button">
+                <div class="item">
+                    <!-- <div class="void"></div> -->
+                    <img src="Assets/Img/CrazyPoolIlustration.png" />
+                    <!-- <div class="void"></div> -->
+                    <h2>Crazy Billard</h2>
+                    <p>
+                        The result of a amazing experiment of testing out and
+                        discovering unity ! Out of this came a original pool
+                        game where each ball has a unique behaviour ! Hope you
+                        enjoy ^^
+                    </p>
+                    <div class="Button Grid">
+                        <!-- <a href="#" class="btn" type="button">
                         <strong>Learn More <br> (WIP)</strong>
 
                         <div id="glow">
@@ -180,19 +231,27 @@
                             <div class="circle"></div>
                         </div>
                     </a> -->
-                    <a href="https://play.unity.com/mg/other/crazybillard_build_web" class="button" target="_blank"><span> Try It Out</span></a>
+                        <a
+                            href="https://play.unity.com/mg/other/crazybillard_build_web"
+                            class="button"
+                            target="_blank"
+                            ><span> Try It Out</span></a
+                        >
+                    </div>
                 </div>
-            </div>
 
-            <div class="item">
-                <!-- <div class="void"></div> -->
-                <img src="Assets/Img/Sir'sCastle_Ill.png">
-                <!-- <div class="void"></div> -->
-                <h2>Sir's Castle</h2>
-                <p>My very first video game made with the construct 2 engin ! I went from bearly knowing any thing on
-                    how to make a video game to this very simple concept.</p>
-                <div class="Button Grid">
-                    <!-- <a href="#" class="btn" type="button">
+                <div class="item">
+                    <!-- <div class="void"></div> -->
+                    <img src="Assets/Img/Sir'sCastle_Ill.png" />
+                    <!-- <div class="void"></div> -->
+                    <h2>Sir's Castle</h2>
+                    <p>
+                        My very first video game made with the construct 2 engin
+                        ! I went from bearly knowing any thing on how to make a
+                        video game to this very simple concept.
+                    </p>
+                    <div class="Button Grid">
+                        <!-- <a href="#" class="btn" type="button">
                         <strong>Learn More <br> (WIP)</strong>
 
                         <div id="glow">
@@ -200,19 +259,24 @@
                             <div class="circle"></div>
                         </div>
                     </a> -->
-                    <a href="https://vivianb11.itch.io/sirs-castle" class="button" target="_blank"><span> Try It Out</span></a>
+                        <a
+                            href="https://vivianb11.itch.io/sirs-castle"
+                            class="button"
+                            target="_blank"
+                            ><span> Try It Out</span></a
+                        >
+                    </div>
                 </div>
-            </div>
 
-            <div class="item">
-                <!--<img src="image3.png">-->
-                <h2>Upcoming Projects</h2>
-                <p>...</p>
-            </div>
+                <div class="item">
+                    <!--<img src="image3.png">-->
+                    <h2>Upcoming Projects</h2>
+                    <p>...</p>
+                </div>
 
-            <!-- more items here (copy paste template) -->
+                <!-- more items here (copy paste template) -->
 
-            <!-- <div class="item">
+                <!-- <div class="item">
                     <img src="A Image">
                     <video src="Or a video" muted autoplay loop></video>
                     <h2>Title</h2>
@@ -236,51 +300,59 @@
                     </a>
                 </div>
             </div> -->
-
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="grid">
-            <h2>Contact Me</h2>
-            <p>If you have any questions or want to get in touch, feel free to send me an email or reach out to me on
-                social media!</p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="love-message">
-            <p>Made with ❤ by a game designer ^^</p>
-        </div>
-        <div class="footer-container">
-            <div class="left-side">
-                <div class="contact-info">
-                    <h4>Contact Information :</h4>
-                    <a href="mailto:vivianb.pro@gmail.com">Send a Mail</a> <span>|</span>
-                    <a href="https://www.linkedin.com/in/vivian-boudon/" target="_blank">LinkedIn</a>
-                    <p></p>
-                    <a href="https://www.artstation.com/vivianb11" target="_blank">ArtStation</a> <span>|</span>
-                    <span class="discord-info">Discord: vivianb11</span>
-                </div>
             </div>
-            <div class="right-side">
-                <div class="additional-links">
-                    <h4>Links :</h4>
-                    <a href="#">None available yet !</a>
-                    <!-- <a href="#">About</a>
-                    <p></p>
-                    <a href="#">Portfolio</a>
-                    <p></p>
-                    <a href="#">Projects</a>
-                    <p></p>
-                    <a href="#">Resume</a> -->
-                </div>
+        </section>
+
+        <!-- <section id="contact">
+            <div class="grid">
+                <h2>Contact Me</h2>
+                <p>
+                    If you have any questions or want to get in touch, feel free
+                    to send me an email or reach out to me on social media!
+                </p>
             </div>
-        </div>
-    </footer>
+        </section> -->
 
+        <footer>
+            <div class="love-message">
+                <p>Made with ❤ by a game designer ^^</p>
+            </div>
+            <!-- <div class="footer-container"> -->
+            <!-- <div class="left-side"> -->
+            <div class="contact-info">
+                <h4>Contact Information :</h4>
+                <a href="mailto:vivianb.pro@gmail.com">Send a Mail</a>
+                <span>|</span>
+                <a
+                    href="https://www.linkedin.com/in/vivian-boudon/"
+                    target="_blank"
+                    >LinkedIn</a
+                >
+                <span>|</span>
 
-    <script src="script.js"></script>
-</body>
+                <a href="https://www.artstation.com/vivianb11" target="_blank"
+                    >ArtStation</a
+                >
+                <span>|</span>
+                <span class="discord-info"> Discord: vivianb11</span>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="right-side">
+                    <div class="additional-links">
+                        <h4>Links :</h4>
+                        <a href="#">None available yet !</a>
+                        <a href="#">About</a>
+                        <p></p>
+                        <a href="#">Portfolio</a>
+                        <p></p>
+                        <a href="#">Projects</a>
+                        <p></p>
+                        <a href="#">Resume</a>
+                    </div> 
+                </div>-->
+            <!-- </div> -->
+        </footer>
 
+        <script src="script.js"></script>
+    </body>
 </html>
