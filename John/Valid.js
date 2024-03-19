@@ -24,7 +24,24 @@ var x = setInterval(function () {
     // If the countdown is over, display a message
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown").innerHTML = "EXPIRED";
+        var message = "Look Under Your Pillow !!!";
+        var sfxAudio = new Audio("Type VFX.mp3");
+        var index = 0;
+        var glitchedMessage = "";
+        var interval = setInterval(function () {
+            if (index < message.length) {
+                glitchedMessage += String.fromCharCode(
+                    Math.floor(Math.random() * 26) + 65
+                );
+                document.getElementById("countdown").innerHTML =
+                    glitchedMessage;
+                index++;
+                // Play sound when letter is revealed
+                sfxAudio.play();
+            } else {
+                clearInterval(interval);
+            }
+        }, 50);
     }
 }, 1000);
 
