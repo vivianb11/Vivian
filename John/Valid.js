@@ -1,5 +1,14 @@
+let TypeSound = new Audio("Type VFX.mp3");
+
+var setted = new Boolean(false);
+
 // Set the date we're counting down to
-var countDownDate = new Date("Mars 15, 2024 00:00:00").getTime();
+var countDownDate = new Date("Mars 18, 2024 23:00:00").getTime();
+
+if (countDownDate < new Date().getTime() && setted) {
+    countDownDate = new Date().getTime() + 30000;
+    setted = true;
+}
 
 // Update the countdown every second
 var x = setInterval(function () {
@@ -26,22 +35,8 @@ var x = setInterval(function () {
         clearInterval(x);
         var message = "Look Under Your Pillow !!!";
         var sfxAudio = new Audio("Type VFX.mp3");
-        var index = 0;
-        var glitchedMessage = "";
-        var interval = setInterval(function () {
-            if (index < message.length) {
-                glitchedMessage += String.fromCharCode(
-                    Math.floor(Math.random() * 26) + 65
-                );
-                document.getElementById("countdown").innerHTML =
-                    glitchedMessage;
-                index++;
-                // Play sound when letter is revealed
-                sfxAudio.play();
-            } else {
-                clearInterval(interval);
-            }
-        }, 50);
+        document.getElementById("countdown").innerHTML = message;
+        sfxAudio.play();
     }
 }, 1000);
 
