@@ -3,7 +3,7 @@ const windowWidth = window.innerWidth;
 const windowHeight = window.innerHeight;
 
 // Specify the number of buttons you want to create
-const numberOfButtons = Math.max(10, Math.random() * 1000);
+const numberOfButtons = Math.max(10, Math.random() * 500);
 
 // Create buttons
 for (let i = 0; i < numberOfButtons; i++) {
@@ -49,7 +49,7 @@ for (let i = 0; i < numberOfButtons; i++) {
     if (i === 0) {
         // Set a link for the first button
         button.addEventListener("click", () => {
-            window.location.href = "https://vivianbll.itch.io/anniversaire---l";
+            window.location.href = "https://vivianb11.itch.io/anniversaire-l";
         });
 
         button.addEventListener("mouseover", () => {
