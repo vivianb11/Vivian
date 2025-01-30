@@ -76,6 +76,10 @@ header {
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     font-size: 125%;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .navbar-menu li a:hover {
