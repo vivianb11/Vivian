@@ -520,6 +520,7 @@ nav a {
     background-color: hsla(280, 75%, 50%, 0.5);
     text-decoration: none;
     margin: 10px;
+    width: fit-content;
 }
 
 .highlight i {
