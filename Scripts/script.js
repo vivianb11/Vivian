@@ -168,7 +168,6 @@ function animateProjects(searchTags) {
         } else {
             project.style.transition = "opacity 0.5s ease-in-out";
             project.style.opacity = "1";
-            project.style.display = ""; // Ensure the project is visible
         }
     });
 }
