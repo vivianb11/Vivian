@@ -131,3 +131,45 @@ var observer = new MutationObserver(function (mutations) {
 observer.observe(document.body, { childList: true });
 
 //#endregion
+
+//#region Project Page Manager
+window.addEventListener("load", function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchTerm = urlParams.get("q");
+
+    if (searchTerm) {
+        // Split the search term into an array of tags
+        const searchTags = searchTerm.split(",").map((tag) => tag.trim());
+
+        // Hide all projects that don't match any of the tags
+        animateProjects(searchTags);
+
+        console.log("Filtered projects by tags: " + searchTags.join(", "));
+    }
+});
+
+function animateProjects(searchTags) {
+    const projects = document.querySelectorAll(".item");
+
+    projects.forEach((project) => {
+        const projectTags = project
+            .getAttribute("ProjectTag")
+            .split(",")
+            .map((tag) => tag.trim());
+        // Check if any of the project's tags match any of the search tags
+        const isVisible = projectTags.some((tag) => searchTags.includes(tag));
+
+        if (!isVisible) {
+            project.style.transition = "opacity 0.5s ease-in-out";
+            project.style.opacity = "0";
+            setTimeout(() => {
+                project.style.display = "none";
+            }, 500);
+        } else {
+            project.style.transition = "opacity 0.5s ease-in-out";
+            project.style.opacity = "1";
+            project.style.display = ""; // Ensure the project is visible
+        }
+    });
+}
+//#endregion

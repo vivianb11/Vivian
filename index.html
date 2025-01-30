@@ -27,10 +27,41 @@
         <section id="projects">
             <h1>Projects</h1>
             <div class="grid">
-                <div class="item">
-                    <!-- <div class="void"></div> -->
-                    <img src="Assets/Img/SmallProjects/Poster_-_Fiche.jpg" />
-                    <!-- <div class="void"></div> -->
+                <div class="item" ProjectTag="2024">
+                    <img src="Assets/Img/ProjetVR/keep_the_crown.png" />
+                    <h2>Eye Tracking VR</h2>
+                    <p>
+                        This project was made in a setting for an internship in
+                        a dental clinic.
+                        <br />
+                        A little twist is that we had to use a new technology :
+                        <b>Eye Tracking !</b> <br /><br />
+                        I was one of the two main <b>programmers</b> on this
+                        project. I developmed tools, systems and the mechanics
+                        of the game so that the other designers of the team
+                        could work and iterate quickly.
+                    </p>
+                    <div class="Button Grid">
+                        <a
+                            href="Project_Pages/VrEyeTracking.html"
+                            class="button"
+                        >
+                            <span>
+                                Learn More about my work
+                                <i class="fa-regular fa-lightbulb fa_2xl"></i
+                            ></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item" ProjectTag="2023">
+                    <!-- <img src="Assets/Img/SmallProjects/Poster_-_Fiche.jpg" /> -->
+                    <video
+                        src="Assets/Video/Possessed_Trailer_Small.mp4"
+                        muted
+                        autoplay
+                        loop
+                    ></video>
                     <h2>POSSESSED</h2>
                     <p>
                         An innovative game concept where you can possess every
@@ -51,12 +82,12 @@
                             class="button"
                             target="_blank"
                         >
-                            <span> Try It Out</span>
+                            <span> Try It Out </span>
                         </a>
                     </div>
                 </div>
 
-                <div class="item">
+                <div class="item" ProjectTag="2023">
                     <!-- <div class="void"></div> -->
                     <img src="Assets/Img/SmallProjects/Logo_AMW.png" />
                     <!-- <div class="void"></div> -->
@@ -83,7 +114,7 @@
                     </div>
                 </div>
 
-                <div class="item">
+                <div class="item" ProjectTag="2023">
                     <!-- <div class="void"></div> -->
                     <img src="Assets/Img/SmallProjects/SquareRoots_Ill.png" />
                     <!-- <div class="void"></div> -->
@@ -111,7 +142,7 @@
                     </div>
                 </div>
 
-                <div class="item">
+                <div class="item" ProjectTag="2023">
                     <img
                         src="Assets/Img/SmallProjects/DreamDropStarfight.png"
                     />
@@ -139,7 +170,7 @@
                     </div>
                 </div>
 
-                <div class="item">
+                <div class="item" ProjectTag="2022">
                     <!-- <div class="void"></div> -->
                     <img src="Assets/Img/SmallProjects/Sir'sCastle_Ill.png" />
                     <!-- <div class="void"></div> -->
@@ -167,7 +198,7 @@
                     </div>
                 </div>
 
-                <div class="item">
+                <div class="item" ProjectTag="All">
                     <!--<img src="image3.png">-->
                     <h2>Upcoming Projects</h2>
                     <p>...</p>
@@ -175,28 +206,19 @@
 
                 <!-- more items here (copy paste template) -->
 
-                <!-- <div class="item">
-                    <img src="A Image">
+                <!-- <div class="item" ProjectTag="2024">
+                    <img src="Assets/Icons/Placeholder.webp">
                     <video src="Or a video" muted autoplay loop></video>
                     <h2>Title</h2>
                     <p>Text</p>
                 <div class="Button Grid">
-                    <a href="#" class="btn" type="button">
-                        <strong>Learn More <br> (WIP)</strong>
-
-                        <div id="glow">
-                            <div class="circle"></div>
-                            <div class="circle"></div>
-                        </div>
-                    </a>
-                    <a href="Link test" class="btn" type="button" target="_blank">
-                        <strong>Try it out</strong>
-
-                        <div id="glow">
-                            <div class="circle"></div>
-                            <div class="circle"></div>
-                        </div>
-                    </a>
+                    <a
+                            href="Link"
+                            class="button"
+                            target="_blank"
+                        >
+                            <span> Try It Out</span>
+                        </a>
                 </div>
             </div> -->
             </div>
@@ -264,31 +286,7 @@
             </div>
         </section>
 
-        <footer>
-            <div class="love-message">
-                <p>Made with ❤ by a <b>Tech Designer</b> ^^</p>
-            </div>
-            <!-- <div class="footer-container"> -->
-            <!-- <div class="left-side"> -->
-            <div class="contact-info">
-                <h4>Contact Information :</h4>
-                <a href="mailto:vivianb.pro@gmail.com">Send a Mail</a>
-                <span>|</span>
-                <a
-                    href="https://www.linkedin.com/in/vivian-boudon/"
-                    target="_blank"
-                >
-                    LinkedIn
-                </a>
-                <span>|</span>
-
-                <a href="https://www.artstation.com/vivianb11" target="_blank">
-                    ArtStation
-                </a>
-                <span>|</span>
-                <a href="Project_Pages/DiscordLink.html"> Discord</a>
-            </div>
-        </footer>
+        <footer w3-include-html="Project_Pages/Footer.html"></footer>
 
         <script src="Scripts/script.js"></script>
     </body>
